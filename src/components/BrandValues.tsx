@@ -33,11 +33,11 @@ export const BrandValues: React.FC<BrandValuesProps> = ({ onLearnQuality }) => {
     },
     {
       icon: HeartHandshake,
-      title: 'Culinary Versatility',
-      subtitle: 'From Swallow to Pastries',
-      description: 'Engineered for exceptional texture whether you are stirring firm Nigerian Tuwo Shinkafa, pan-frying crispy golden Masa, or baking delicate gluten-free bread.',
+      title: 'Universal Soup Compatibility',
+      subtitle: 'Pairs with Any Nigerian Soup',
+      description: 'Engineered to create its own velvety, elastic swallow that pairs effortlessly with rich soups — from leafy Efo Riro and Afang to draw soups like Ogbono and hearty Egusi.',
       color: 'bg-stone-100 text-stone-900 border-stone-300',
-      tag: 'Multi-Purpose',
+      tag: 'Soup Pairing',
     },
   ];
 

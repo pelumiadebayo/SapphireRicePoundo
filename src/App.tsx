@@ -53,7 +53,7 @@ export default function App() {
             onLearnQuality={() => scrollToSection('quality')}
           />
 
-          {/* Product Showcase (1kg Packshot, Specs, Nutrition, 12-Min Tuwo Swallow Guide) */}
+          {/* Product Showcase (1kg Packshot, Specs, Nutrition, 10-Min Sapphire Rice Swallow Guide) */}
           <ProductShowcase
             onGoToRecipes={() => scrollToSection('recipes')}
             onOpenDistributor={handleOpenDistributor}

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Sparkles, CheckCircle2, Clock, ShieldCheck, ArrowRight, Flame, HeartHandshake, Eye, Upload, RefreshCw, Image as ImageIcon } from 'lucide-react';
 import { useProductImage } from '../context/ProductImageContext';
+import { BrandLogo } from './BrandLogo';
 
 interface HeroProps {
   onExploreProduct: () => void;
@@ -52,11 +53,11 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
           {/* Left Column: Typography & Brand Narrative */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300/60 text-xs sm:text-sm font-semibold shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+            <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-emerald-100/90 text-emerald-900 border border-emerald-300/60 text-xs sm:text-sm font-semibold shadow-xs">
+              <BrandLogo size="sm" />
               <span>Sapphire Foods • The Rice Flour Standard</span>
-              <span className="text-emerald-500">|</span>
-              <span className="text-emerald-800 font-bold">100% Gluten-Free</span>
+              <span className="text-emerald-500 hidden sm:inline">|</span>
+              <span className="text-emerald-800 font-bold hidden sm:inline">100% Gluten-Free</span>
             </div>
 
             {/* Main Headline */}
@@ -67,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
 
             {/* Value Description */}
             <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Meet <strong className="text-stone-900 font-semibold">Sapphire Rice Flour Mix (1kg)</strong> — crafted from select sun-ripened river basin paddies, cool-milled to an ultra-fine micronized texture. Enjoy velvety Tuwo Shinkafa in just 12 minutes, crispy golden Northern masa, and light wholesome gluten-free baking for your entire family.
+              Meet <strong className="text-stone-900 font-semibold">Sapphire Rice Flour Mix (1kg)</strong> — crafted from select sun-ripened river basin paddies and cool-milled to an ultra-fine micronized texture. Specially formulated to make its own signature Sapphire Rice Swallow: velvety, lump-free, and delightfully light to pair with Egusi, Efo Riro, Ogbono, Afang, and all your favorite soups.
             </p>
 
             {/* Quick Benefits Checklist */}
@@ -78,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
               </div>
               <div className="flex items-center gap-2 bg-white/80 p-2.5 rounded-lg border border-stone-200/80 shadow-2xs">
                 <Clock className="w-4 h-4 text-emerald-700 shrink-0" />
-                <span className="text-xs font-semibold text-stone-800">Ready in 12 Mins</span>
+                <span className="text-xs font-semibold text-stone-800">Ready in 10 Mins</span>
               </div>
               <div className="flex items-center gap-2 bg-white/80 p-2.5 rounded-lg border border-stone-200/80 shadow-2xs col-span-2 sm:col-span-1">
                 <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
@@ -102,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
                 id="hero-view-recipes-btn"
               >
                 <Flame className="w-4 h-4 text-amber-600" />
-                <span>Tuwo & Masa Recipes</span>
+                <span>Soup Pairing Recipes</span>
               </button>
               <button
                 onClick={onFindRetailer}
@@ -191,6 +192,15 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
                     referrerPolicy="no-referrer"
                   />
 
+                  {/* Floating Badge 0: Official Seal */}
+                  <div className="absolute top-4 left-2 bg-white/95 backdrop-blur-xs px-2.5 py-1.5 rounded-xl shadow-lg border border-emerald-100 flex items-center gap-2">
+                    <BrandLogo size="sm" />
+                    <div className="text-left">
+                      <p className="text-[9px] text-stone-400 uppercase tracking-wider font-semibold">Official Seal</p>
+                      <p className="text-[11px] font-bold text-emerald-900">Sapphire Brand</p>
+                    </div>
+                  </div>
+
                   {/* Floating Badge 1: Net Wt 1kg */}
                   <div className="absolute top-4 right-2 bg-white/95 backdrop-blur-xs px-3.5 py-2 rounded-xl shadow-lg border border-emerald-100 flex items-center gap-2 animate-bounce-slow">
                     <div className="w-7 h-7 rounded-lg bg-emerald-700 text-white flex items-center justify-center font-bold text-xs">
@@ -202,14 +212,14 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
                     </div>
                   </div>
 
-                  {/* Floating Badge 2: Tuwo Swallow Serving */}
+                  {/* Floating Badge 2: Sapphire Swallow Serving */}
                   <div className="absolute bottom-6 left-2 bg-white/95 backdrop-blur-xs px-3.5 py-2.5 rounded-xl shadow-lg border border-stone-200 flex items-center gap-2.5">
                     <div className="w-8 h-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-sm font-bold">
                       🍲
                     </div>
                     <div className="text-left">
                       <p className="text-[10px] text-emerald-800 uppercase font-bold tracking-wider">Perfect Swallow</p>
-                      <p className="text-xs font-bold text-stone-900">Tuwo Shinkafa Ready</p>
+                      <p className="text-xs font-bold text-stone-900">Sapphire Rice Swallow</p>
                     </div>
                   </div>
                 </div>

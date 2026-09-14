@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { PRODUCT_PACKS, NUTRITION_FACTS } from '../data/mockData';
 import { Check, Sparkles, ChefHat, Package, Flame, Clock, Info, ArrowRight, Upload, RefreshCw } from 'lucide-react';
 import { useProductImage } from '../context/ProductImageContext';
+import { BrandLogo } from './BrandLogo';
 
 interface ProductShowcaseProps {
   onGoToRecipes: () => void;
@@ -100,7 +101,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
             Sapphire Rice Flour Mix (1kg)
           </h2>
           <p className="mt-3 text-stone-600 text-base leading-relaxed">
-            Engineered for African household kitchens, commercial caterers, and gluten-free bakers who refuse to compromise on texture, hygiene, and authentic taste.
+            Engineered for Nigerian and African households, banquets, and commercial caterers who refuse to compromise on supple swallow texture, digestive lightness, and authentic soup pairings.
           </p>
         </div>
 
@@ -142,7 +143,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
               }`}
             >
               <ChefHat className="w-4 h-4" />
-              <span>12-Min Lump-Free Swallow Masterclass</span>
+              <span>10-Min Lump-Free Swallow Masterclass</span>
             </button>
           </div>
 
@@ -165,9 +166,9 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                 >
                   {/* Photo bar */}
                   <div className="w-full flex items-center justify-between mb-3">
-                    <span className="text-[11px] font-semibold text-stone-600 flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
-                      {isCustom ? 'Authentic Product Pack' : '1kg Flagship Pouch'}
+                    <span className="text-[11px] font-semibold text-stone-700 flex items-center gap-2">
+                      <BrandLogo size="sm" />
+                      <span>{isCustom ? 'Authentic Product Pack' : 'Sapphire 1kg Flagship Pouch'}</span>
                     </span>
                     <div className="flex items-center gap-2">
                       {isCustom && (
@@ -212,10 +213,10 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                       <p className="text-[10px] text-stone-600">Inspect the pure white whole rice grains before milling.</p>
                     </div>
 
-                    {/* Interactive Annotation 2: Tuwo Swallow Serving */}
+                    {/* Interactive Annotation 2: Sapphire Rice Swallow Serving */}
                     <div className="hidden sm:block absolute right-2 bottom-1/4 bg-white/95 border border-emerald-200 rounded-lg p-2 shadow-md max-w-[150px] text-left pointer-events-none">
-                      <p className="text-[10px] font-bold text-emerald-800">Tuwo Shinkafa</p>
-                      <p className="text-[10px] text-stone-600">Ready in 12 mins with rich savory stew.</p>
+                      <p className="text-[10px] font-bold text-emerald-800">Rice Swallow</p>
+                      <p className="text-[10px] text-stone-600">Velvety & firm in 10 mins with rich soup.</p>
                     </div>
                   </div>
 
@@ -318,7 +319,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                       onClick={onGoToRecipes}
                       className="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1 underline underline-offset-4 ml-auto"
                     >
-                      <span>View Tuwo Recipes</span>
+                      <span>View Swallow & Soup Recipes</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
@@ -381,7 +382,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
             </div>
           )}
 
-          {/* Tab 3: Interactive 12-Min Preparation Guide */}
+          {/* Tab 3: Interactive 10-Min Preparation Guide */}
           {activeTab === 'prepGuide' && (
             <div className="p-6 sm:p-10">
               <div className="max-w-4xl mx-auto">
@@ -390,10 +391,10 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                     Culinary Masterclass
                   </span>
                   <h3 className="text-2xl font-bold text-stone-900 font-serif mt-1">
-                    How to Make Lump-Free Tuwo Shinkafa in 12 Minutes
+                    How to Make Lump-Free Sapphire Rice Swallow in 10 Minutes
                   </h3>
                   <p className="text-stone-600 text-sm mt-1">
-                    Follow Sapphire’s proven 4-step technique for supple, cloud-soft swallow every single time.
+                    Follow Sapphire’s proven 4-step technique for supple, elastic swallow that pairs with any soup.
                   </p>
                 </div>
 

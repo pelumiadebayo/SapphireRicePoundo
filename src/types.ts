@@ -21,7 +21,7 @@ export interface Recipe {
   id: string;
   title: string;
   subtitle: string;
-  category: 'swallow' | 'breakfast' | 'snacks' | 'baking';
+  category: 'all' | 'vegetable' | 'draw' | 'traditional' | 'specialty' | string;
   prepTime: string;
   cookTime: string;
   totalTime: string;
@@ -30,6 +30,7 @@ export interface Recipe {
   calories: string;
   image: string;
   featured?: boolean;
+  soupName?: string;
   description: string;
   ingredients: {
     name: string;

@@ -5,24 +5,32 @@ interface ProductImageContextType {
   isCustom: boolean;
   setProductImageFromDataUrl: (dataUrl: string) => void;
   resetToDefault: () => void;
+  brandLogo: string;
+  isCustomLogo: boolean;
+  setBrandLogoFromDataUrl: (dataUrl: string) => void;
+  resetBrandLogo: () => void;
 }
 
 const DEFAULT_IMAGE = '/assets/images/sapphire_rice_flour_pack_1789386666178.jpg';
+const DEFAULT_LOGO = '/assets/images/sapphire_logo.png';
 const STORAGE_KEY = 'sapphire_custom_product_image';
+const LOGO_STORAGE_KEY = 'sapphire_custom_brand_logo';
 
 const ProductImageContext = createContext<ProductImageContextType>({
   productImage: DEFAULT_IMAGE,
   isCustom: false,
   setProductImageFromDataUrl: () => {},
   resetToDefault: () => {},
+  brandLogo: DEFAULT_LOGO,
+  isCustomLogo: false,
+  setBrandLogoFromDataUrl: () => {},
+  resetBrandLogo: () => {},
 });
 
 export const ProductImageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [productImage, setProductImage] = useState<string>(() => {
-    // 1. Check if user previously uploaded their real photo via the UI
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) return saved;
-
     return DEFAULT_IMAGE;
   });
 
@@ -30,7 +38,17 @@ export const ProductImageProvider: React.FC<{ children: React.ReactNode }> = ({ 
     return !!localStorage.getItem(STORAGE_KEY);
   });
 
-  // Check if a direct file was uploaded to /product.png or /product.jpg in public/
+  const [brandLogo, setBrandLogo] = useState<string>(() => {
+    const saved = localStorage.getItem(LOGO_STORAGE_KEY);
+    if (saved) return saved;
+    return DEFAULT_LOGO;
+  });
+
+  const [isCustomLogo, setIsCustomLogo] = useState<boolean>(() => {
+    return !!localStorage.getItem(LOGO_STORAGE_KEY);
+  });
+
+  // Check if a direct file was uploaded for product
   useEffect(() => {
     if (localStorage.getItem(STORAGE_KEY)) return;
 
@@ -58,13 +76,51 @@ export const ProductImageProvider: React.FC<{ children: React.ReactNode }> = ({ 
             break;
           }
         } catch {
-          // ignore network error
+          // ignore
         }
       }
     };
 
     checkCandidates();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
+  // Check if a direct file was uploaded for logo
+  useEffect(() => {
+    if (localStorage.getItem(LOGO_STORAGE_KEY)) return;
+
+    const candidates = [
+      '/Sapphire_Logo_Original_Font_Green_Text (1).png',
+      encodeURI('/Sapphire_Logo_Original_Font_Green_Text (1).png'),
+      '/Sapphire_Logo_Original_Font_Green_Text.png',
+      '/logo.png',
+      '/logo.jpg',
+      '/sapphire_logo.png',
+      '/sapphire_logo.jpg',
+      '/assets/images/sapphire_logo.png',
+    ];
+    let cancelled = false;
+
+    const checkLogoCandidates = async () => {
+      for (const url of candidates) {
+        try {
+          const res = await fetch(url, { method: 'HEAD' });
+          if (res.ok && res.headers.get('content-type')?.startsWith('image')) {
+            if (!cancelled) {
+              setBrandLogo(url);
+              setIsCustomLogo(true);
+            }
+            break;
+          }
+        } catch {
+          // ignore
+        }
+      }
+    };
+
+    checkLogoCandidates();
     return () => {
       cancelled = true;
     };
@@ -74,7 +130,7 @@ export const ProductImageProvider: React.FC<{ children: React.ReactNode }> = ({ 
     try {
       localStorage.setItem(STORAGE_KEY, dataUrl);
     } catch {
-      // localStorage quota limit handling
+      // quota limit
     }
     setProductImage(dataUrl);
     setIsCustom(true);
@@ -86,6 +142,22 @@ export const ProductImageProvider: React.FC<{ children: React.ReactNode }> = ({ 
     setIsCustom(false);
   };
 
+  const setBrandLogoFromDataUrl = (dataUrl: string) => {
+    try {
+      localStorage.setItem(LOGO_STORAGE_KEY, dataUrl);
+    } catch {
+      // quota limit
+    }
+    setBrandLogo(dataUrl);
+    setIsCustomLogo(true);
+  };
+
+  const resetBrandLogo = () => {
+    localStorage.removeItem(LOGO_STORAGE_KEY);
+    setBrandLogo(DEFAULT_LOGO);
+    setIsCustomLogo(false);
+  };
+
   return (
     <ProductImageContext.Provider
       value={{
@@ -93,6 +165,10 @@ export const ProductImageProvider: React.FC<{ children: React.ReactNode }> = ({ 
         isCustom,
         setProductImageFromDataUrl,
         resetToDefault,
+        brandLogo,
+        isCustomLogo,
+        setBrandLogoFromDataUrl,
+        resetBrandLogo,
       }}
     >
       {children}

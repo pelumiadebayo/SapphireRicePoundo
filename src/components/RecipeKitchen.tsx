@@ -9,18 +9,17 @@ export const RecipeKitchen: React.FC = () => {
   const [activeRecipe, setActiveRecipe] = useState<Recipe | null>(null);
 
   const categories = [
-    { id: 'all', label: 'All Recipes' },
-    { id: 'swallow', label: 'Traditional Swallow' },
-    { id: 'snacks', label: 'Masa & Savory Snacks' },
-    { id: 'breakfast', label: 'Breakfast & Pancakes' },
-    { id: 'baking', label: 'Baking & Batter Crusts' },
+    { id: 'all', label: 'All Soup Pairings' },
+    { id: 'vegetable', label: 'Rich Vegetable (Efo Riro, Afang)' },
+    { id: 'draw', label: 'Thick & Draw (Egusi, Ogbono)' },
+    { id: 'traditional', label: 'Heritage Soups (Banga, Abula)' },
   ];
 
   const filteredRecipes = selectedCategory === 'all'
     ? RECIPES
     : RECIPES.filter((r) => r.category === selectedCategory);
 
-  const featuredRecipe = RECIPES.find((r) => r.featured && r.id === 'signature-tuwo-shinkafa') || RECIPES[0];
+  const featuredRecipe = RECIPES.find((r) => r.featured && r.id === 'rice-swallow-eforiro') || RECIPES[0];
 
   return (
     <section id="recipes" className="py-16 sm:py-20 bg-white">
@@ -30,13 +29,13 @@ export const RecipeKitchen: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="text-xs font-bold text-emerald-700 tracking-widest uppercase mb-2 block flex items-center gap-1.5">
-              <ChefHat className="w-4 h-4 text-emerald-600" /> Inspired by FMN Food Hub
+              <ChefHat className="w-4 h-4 text-emerald-600" /> Swallow & Soup Pairings
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 font-serif">
-              The Sapphire Recipe Kitchen
+              Sapphire Rice Swallow & Soup Pairings
             </h2>
             <p className="mt-2 text-stone-600 text-sm sm:text-base max-w-2xl">
-              From the authentic fluffy Tuwo Shinkafa swallow on our pack to golden honeyed northern masa and crispy batters — unlock versatile meals made effortlessly with Sapphire Rice Flour.
+              Just like celebrated Semo swallow paired with Nigeria’s most iconic soups, Sapphire Rice Flour Mix creates its own velvety, lump-free swallow made to be eaten with sizzling Efo Riro, rich Egusi, Ogbono, Afang, and Banga.
             </p>
           </div>
 
@@ -58,7 +57,7 @@ export const RecipeKitchen: React.FC = () => {
           </div>
         </div>
 
-        {/* Featured Signature Recipe Highlight (Tuwo Shinkafa from package) */}
+        {/* Featured Signature Recipe Highlight (Sapphire Rice Swallow with Efo Riro) */}
         {selectedCategory === 'all' && (
           <div className="mb-12 bg-gradient-to-br from-emerald-900 via-emerald-950 to-stone-950 rounded-3xl overflow-hidden shadow-xl text-white">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
@@ -73,7 +72,7 @@ export const RecipeKitchen: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-transparent lg:hidden" />
                 <div className="absolute top-4 left-4 bg-amber-400 text-stone-950 px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider shadow-md">
-                  ★ Signature Pack Dish
+                  ★ Signature Swallow Pairing
                 </div>
               </div>
 
@@ -86,7 +85,7 @@ export const RecipeKitchen: React.FC = () => {
                   <span>•</span>
                   <span>{featuredRecipe.calories}</span>
                   <span>•</span>
-                  <span className="text-emerald-300">Guaranteed Zero Lumps</span>
+                  <span className="text-emerald-300">100% Lump-Free Swallow</span>
                 </div>
 
                 <h3 className="text-2xl sm:text-3xl font-bold font-serif leading-snug">
@@ -99,8 +98,8 @@ export const RecipeKitchen: React.FC = () => {
 
                 {/* Micro highlight */}
                 <div className="p-3 bg-white/10 rounded-xl border border-white/10 text-xs text-stone-200">
-                  <span className="font-bold text-amber-300 block mb-0.5">Key Advantage:</span>
-                  Unlike raw rice which requires 2 hours of boiling and strenuous pounding, Sapphire Rice Flour produces tender, velvety swallow in only 12 minutes!
+                  <span className="font-bold text-amber-300 block mb-0.5">Digestive Advantage:</span>
+                  Unlike heavy cassava or wheat swallows that leave you tired and bloated, Sapphire Rice Swallow is pure, naturally gluten-free, and prepares in just 10 minutes!
                 </div>
 
                 <div className="pt-2 flex items-center gap-4">
@@ -146,7 +145,7 @@ export const RecipeKitchen: React.FC = () => {
                 {/* Content */}
                 <div className="p-5">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 block mb-1">
-                    {recipe.category === 'swallow' ? 'Swallow & Stew' : recipe.category}
+                    {recipe.soupName || 'Sapphire Swallow Pairing'}
                   </span>
                   <h4 className="text-lg font-bold text-stone-900 font-serif leading-snug group-hover:text-emerald-800 transition-colors">
                     {recipe.title}
@@ -167,7 +166,7 @@ export const RecipeKitchen: React.FC = () => {
                   onClick={() => setActiveRecipe(recipe)}
                   className="inline-flex items-center gap-1 text-xs font-bold text-emerald-800 hover:text-emerald-950 transition-colors"
                 >
-                  <span>See Recipe</span>
+                  <span>See Recipe & Prep</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -181,9 +180,9 @@ export const RecipeKitchen: React.FC = () => {
             <Sparkles className="w-6 h-6" />
           </div>
           <div className="flex-1">
-            <h5 className="text-sm font-bold text-amber-950">Did you know? Rice Flour absorbs 50% less oil than wheat!</h5>
+            <h5 className="text-sm font-bold text-amber-950">Master Secret: The Cold Slurry Technique for 100% Lump-Free Swallow</h5>
             <p className="text-xs text-amber-800 mt-0.5">
-              When making crispy fish coatings, puff pastries, or golden masa, Sapphire Rice Flour yields a noticeably crispier, less greasy finish that stays light on the stomach.
+              Always whisk your first cup of Sapphire Rice Flour in cool water before introducing it to boiling water. This allows the micronized rice starches to disperse evenly, yielding a smooth, elastic swallow that pairs with any soup.
             </p>
           </div>
         </div>

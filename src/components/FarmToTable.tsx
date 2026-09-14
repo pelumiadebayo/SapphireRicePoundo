@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sprout, Factory, CheckCircle2, Award, ShieldCheck, HeartHandshake } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 export const FarmToTable: React.FC = () => {
   const steps = [
@@ -52,15 +53,22 @@ export const FarmToTable: React.FC = () => {
           </div>
 
           <div className="lg:col-span-4 flex flex-wrap gap-3 lg:justify-end">
-            <div className="bg-emerald-50 px-4 py-3 rounded-2xl border border-emerald-200 flex items-center gap-3">
-              <Award className="w-6 h-6 text-emerald-700" />
+            <div className="bg-white px-3.5 py-2.5 rounded-2xl border border-emerald-200 shadow-2xs flex items-center gap-3">
+              <BrandLogo size="sm" />
+              <div>
+                <span className="text-xs font-bold text-emerald-950 block">Sapphire Guarantee</span>
+                <span className="text-[11px] text-emerald-700">100% Single-Origin Rice</span>
+              </div>
+            </div>
+            <div className="bg-emerald-50 px-3.5 py-2.5 rounded-2xl border border-emerald-200 flex items-center gap-3">
+              <Award className="w-5 h-5 text-emerald-700" />
               <div>
                 <span className="text-xs font-bold text-emerald-950 block">NAFDAC Certified</span>
                 <span className="text-[11px] text-emerald-700">Reg No: 01-9482L</span>
               </div>
             </div>
-            <div className="bg-amber-50 px-4 py-3 rounded-2xl border border-amber-200 flex items-center gap-3">
-              <ShieldCheck className="w-6 h-6 text-amber-700" />
+            <div className="bg-amber-50 px-3.5 py-2.5 rounded-2xl border border-amber-200 flex items-center gap-3">
+              <ShieldCheck className="w-5 h-5 text-amber-700" />
               <div>
                 <span className="text-xs font-bold text-amber-950 block">ISO 22000 Ready</span>
                 <span className="text-[11px] text-amber-700">HACCP Food Safety</span>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag, PhoneCall, ChevronRight, Sparkles, MapPin, Award } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -42,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenDistributor, o
             <span className="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full text-[11px] font-semibold border border-emerald-500/30 flex items-center gap-1">
               <Sparkles className="w-3 h-3 text-amber-400" /> 100% Naturally Gluten-Free
             </span>
-            <span className="hidden sm:inline">Sapphire Rice Flour Mix (1kg) — Silky Lump-Free Swallow & Baking</span>
+            <span className="hidden sm:inline">Sapphire Rice Flour Mix (1kg) — Silky Lump-Free Swallow for Nigeria's Iconic Soups</span>
           </div>
           <div className="flex items-center gap-4 text-emerald-200 text-[11px]">
             <span className="flex items-center gap-1">
@@ -70,28 +71,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenDistributor, o
           {/* Brand Logo */}
           <button
             onClick={() => handleLinkClick('hero')}
-            className="flex items-center gap-3 text-left group"
+            className="text-left group"
             id="brand-logo-btn"
           >
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-emerald-600 via-emerald-700 to-green-800 flex items-center justify-center shadow-md shadow-emerald-900/10 border-2 border-emerald-400/30 group-hover:scale-105 transition-transform">
-              <div className="relative flex flex-col items-center justify-center">
-                <span className="text-amber-300 text-[10px] tracking-widest font-black uppercase">🌾</span>
-                <span className="text-white text-[13px] font-extrabold tracking-tighter -mt-1 font-serif">S</span>
-              </div>
-            </div>
-            <div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-emerald-900 font-extrabold text-xl sm:text-2xl tracking-tight font-serif">
-                  SAPPHIRE
-                </span>
-                <span className="text-xs bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">
-                  Foods
-                </span>
-              </div>
-              <p className="text-[11px] font-medium text-stone-500 uppercase tracking-widest -mt-0.5">
-                Pure Rice Flour Mix
-              </p>
-            </div>
+            <BrandLogo size="md" withText theme="light" allowUpload />
           </button>
 
           {/* Desktop Nav Links */}

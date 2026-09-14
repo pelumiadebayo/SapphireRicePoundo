@@ -88,7 +88,7 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({ recipe, onClose }) => 
             <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/30 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-white">
               <span className="text-xs font-bold uppercase tracking-wider text-amber-300">
-                {recipe.category === 'swallow' ? 'Signature Swallow' : recipe.category}
+                {recipe.soupName || 'Sapphire Rice Swallow Pairing'}
               </span>
               <h2 className="text-xl sm:text-2xl font-bold font-serif leading-tight mt-1">
                 {recipe.title}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle2, ShieldCheck, Award, Heart } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -73,20 +74,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
           
           {/* Col 1: Brand Info (Span 2) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-emerald-700 flex items-center justify-center border border-emerald-400/30 text-amber-300 font-bold text-lg">
-                🌾
-              </div>
-              <div>
-                <span className="text-xl font-bold text-white font-serif tracking-tight">SAPPHIRE FOODS</span>
-                <span className="block text-[11px] font-semibold text-emerald-400 uppercase tracking-widest">
-                  Rice Flour Manufacturing Ltd
-                </span>
-              </div>
-            </div>
+            <BrandLogo size="lg" withText theme="dark" allowUpload />
 
             <p className="text-stone-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-              Sapphire Rice Flour Mix is West Africa's benchmark in pure grain milling. Milled from sun-ripened river basin paddies, our mission is to make nutritious, authentic traditional swallow and modern baking accessible to every household.
+              Sapphire Rice Flour Mix is West Africa's benchmark in pure grain milling. Milled from sun-ripened river basin paddies, our mission is to make nutritious, authentic, lump-free swallow accessible to every household to enjoy with diverse traditional soups.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-stone-400">
@@ -128,7 +119,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
               </li>
               <li>
                 <button onClick={() => onNavigate('product')} className="hover:text-emerald-400 transition-colors">
-                  Commercial Bakery Bulk Sack (25kg)
+                  Commercial Banquet & Caterer Sack (25kg)
                 </button>
               </li>
               <li>
@@ -142,32 +133,32 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
           {/* Col 3: Recipe Kitchen */}
           <div>
             <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-4 font-serif">
-              Recipe Kitchen
+              Soup Pairings
             </h4>
             <ul className="space-y-2.5 text-xs text-stone-400">
               <li>
                 <button onClick={() => onNavigate('recipes')} className="hover:text-emerald-400 transition-colors">
-                  Tuwo Shinkafa Masterclass
+                  Sapphire Swallow & Efo Riro
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('recipes')} className="hover:text-emerald-400 transition-colors">
-                  Golden Northern Rice Masa
+                  Sapphire Swallow & Rich Egusi
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('recipes')} className="hover:text-emerald-400 transition-colors">
-                  Fluffy Gluten-Free Pancakes
+                  Sapphire Swallow & Ogbono Draw
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('recipes')} className="hover:text-emerald-400 transition-colors">
-                  Ultra-Crisp Rice Frying Batter
+                  Sapphire Swallow & Calabar Afang
                 </button>
               </li>
               <li>
                 <button onClick={() => onNavigate('recipes')} className="hover:text-emerald-400 transition-colors">
-                  Savory Rice Flour Crepes
+                  Sapphire Swallow & Delta Banga
                 </button>
               </li>
             </ul>
