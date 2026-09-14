@@ -66,6 +66,8 @@ export const NUTRITION_FACTS: NutritionalFact[] = [
   { nutrient: 'Zinc', amountPer100g: '1.4mg', dailyValuePercentage: '13%' },
 ];
 
+const assetUrl = (fileName: string) => `${import.meta.env.BASE_URL}assets/images/${fileName}`;
+
 export const RECIPES: Recipe[] = [
   {
     id: 'rice-swallow-eforiro',
@@ -78,7 +80,7 @@ export const RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'Easy',
     calories: '310 kcal / serving',
-    image: '/assets/images/rice_swallow_eforiro_1789394125809.jpg',
+    image: assetUrl('rice_swallow_eforiro_1789394125809.jpg'),
     featured: true,
     soupName: 'Efo Riro (Rich Vegetable Soup)',
     description: 'The ultimate culinary harmony. Turn Sapphire Rice Flour into a pristine, velvety white swallow in just 10 minutes, then scoop through sizzling hot Efo Riro loaded with smoked fish, ponmo, and locust beans (iru). The clean, smooth swallow balances the bold, savory vegetable sauce without leaving you feeling heavy.',
@@ -138,7 +140,7 @@ export const RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'Easy',
     calories: '340 kcal / serving',
-    image: '/assets/images/rice_swallow_egusi_1789394113825.jpg',
+    image: assetUrl('rice_swallow_egusi_1789394113825.jpg'),
     featured: true,
     soupName: 'Egusi Soup (Melon Seed & Ugu)',
     description: 'Nothing compares to dipping a morsel of ultra-smooth, firm Sapphire Rice Swallow into rich, golden-red Egusi soup loaded with tender melon clumps, stockfish, and fresh ugu greens. The swallow glides effortlessly down the throat without post-meal bloating.',
@@ -195,7 +197,7 @@ export const RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'Easy',
     calories: '295 kcal / serving',
-    image: '/assets/images/rice_swallow_ogbono_1789394136136.jpg',
+    image: assetUrl('rice_swallow_ogbono_1789394136136.jpg'),
     featured: true,
     soupName: 'Ogbono Draw Soup',
     description: 'The silky, elastic draw of slow-simmered Ogbono soup clings to the soft, cohesive texture of Sapphire Rice Swallow. Enhanced with aromatic uziza leaves, smoked catfish, and rich crayfish, this combination delivers pure comfort.',
@@ -240,7 +242,7 @@ export const RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'Medium',
     calories: '320 kcal / serving',
-    image: '/assets/images/rice_swallow_eforiro_1789394125809.jpg',
+    image: assetUrl('rice_swallow_eforiro_1789394125809.jpg'),
     featured: false,
     soupName: 'Calabar Afang Soup',
     description: 'Afang soup is celebrated across Nigeria for its rich, earthy texture and deep coastal flavors. Paired with soft, pliable Sapphire Rice Swallow, each bite delivers the pleasant crunch of afang leaves and the savory kick of periwinkles.',
@@ -279,7 +281,7 @@ export const RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'Medium',
     calories: '350 kcal / serving',
-    image: '/assets/images/rice_swallow_egusi_1789394113825.jpg',
+    image: assetUrl('rice_swallow_egusi_1789394113825.jpg'),
     featured: false,
     soupName: 'Delta Banga Soup (Ofe Akwu)',
     description: 'The intoxicating aroma of Banga spice blend, rohohie, and beletete simmered in rich palm nut extract meets the velvety texture of Sapphire Rice Swallow. A culinary feast steeped in Niger Delta heritage.',
@@ -317,7 +319,7 @@ export const RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'Easy',
     calories: '280 kcal / serving',
-    image: '/assets/images/rice_swallow_ogbono_1789394136136.jpg',
+    image: assetUrl('rice_swallow_ogbono_1789394136136.jpg'),
     featured: false,
     soupName: 'Abula (Ewedu, Gbegiri & Buka Stew)',
     description: 'The iconic Yoruba Buka feast: bright green whisked ewedu, golden yellow creamy gbegiri (bean soup), and fiery red buka stew layered together. Paired with soft, silky Sapphire Rice Swallow, this is swallow culture at its finest.',

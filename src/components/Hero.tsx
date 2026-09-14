@@ -128,7 +128,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
           </div>
 
           {/* Right Column: Hero Product Packshot Presentation */}
-          <div className="lg:col-span-5 flex justify-center relative">
+          <div className="order-first lg:order-none lg:col-span-5 flex justify-center relative">
             <div className="relative w-full max-w-md">
               {/* Decorative Glow */}
               <div className="absolute inset-0 bg-gradient-to-tr from-emerald-400/20 via-amber-300/20 to-emerald-200/10 rounded-3xl blur-2xl transform scale-95 -z-10" />
