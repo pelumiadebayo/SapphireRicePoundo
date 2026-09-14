@@ -330,7 +330,7 @@ export const DistributorPortal: React.FC = () => {
                 </button>
 
                 <div className="pt-2 text-center text-xs text-stone-400">
-                  Direct B2B Hotline: <strong className="text-stone-700">+234 (0) 800 727 7447</strong> (Mon-Fri 8AM-5PM)
+                  Direct B2B Hotline: <strong className="text-stone-700">0903660081</strong> (Mon-Fri 8AM-5PM) · <a href="mailto:sales@sapphirefoods.ng" className="text-emerald-800 hover:underline">sales@sapphirefoods.ng</a>
                 </div>
               </form>
             )}

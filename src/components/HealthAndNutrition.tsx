@@ -31,20 +31,6 @@ export const HealthAndNutrition: React.FC = () => {
       wheatSemolina: 'Can cause heavy fatigue',
       winner: true,
     },
-    {
-      metric: 'Frying Oil Absorption',
-      sapphire: '50% Lower Oil Uptake',
-      traditionalPounded: 'Not suitable for frying',
-      wheatSemolina: 'High Oil Absorption',
-      winner: true,
-    },
-    {
-      metric: 'Essential Fortification',
-      sapphire: 'Fortified with Iron & Vitamin B1',
-      traditionalPounded: 'Lost in boiling wash',
-      wheatSemolina: 'Variable',
-      winner: true,
-    },
   ];
 
   const benefits = [
@@ -130,7 +116,7 @@ export const HealthAndNutrition: React.FC = () => {
                     ★ Sapphire Rice Flour (1kg)
                   </th>
                   <th className="py-4 px-6 text-stone-600">Raw Rice (Traditional Pounding)</th>
-                  <th className="py-4 px-6 text-stone-600">Wheat / Semolina Swallow</th>
+                  <th className="py-4 px-6 text-stone-600">Other Staples</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-stone-100">

@@ -67,13 +67,6 @@ export const FarmToTable: React.FC = () => {
                 <span className="text-[11px] text-emerald-700">Reg No: 01-9482L</span>
               </div>
             </div>
-            <div className="bg-amber-50 px-3.5 py-2.5 rounded-2xl border border-amber-200 flex items-center gap-3">
-              <ShieldCheck className="w-5 h-5 text-amber-700" />
-              <div>
-                <span className="text-xs font-bold text-amber-950 block">ISO 22000 Ready</span>
-                <span className="text-[11px] text-amber-700">HACCP Food Safety</span>
-              </div>
-            </div>
           </div>
         </div>
 

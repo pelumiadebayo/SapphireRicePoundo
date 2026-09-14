@@ -87,11 +87,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Consumer Helpline: +234 (0) 800 727 7447 (Toll-Free)</span>
+                <a href="tel:0903660081" className="hover:text-emerald-300 transition-colors">0903660081</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>inquiries@sapphirefoods.com.ng</span>
+                <a href="mailto:info@sapphirefoods.ng" className="hover:text-emerald-300 transition-colors">info@sapphirefoods.ng</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-emerald-500 shrink-0" />
+                <a href="mailto:sales@sapphirefoods.ng" className="hover:text-emerald-300 transition-colors">sales@sapphirefoods.ng</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-4 text-center text-emerald-500 shrink-0 font-semibold">@</span>
+                <span>@sapphirericepoundo</span>
               </div>
             </div>
           </div>
@@ -208,9 +216,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
             </span>
             <span className="flex items-center gap-1.5 text-amber-400 font-semibold">
               <ShieldCheck className="w-4 h-4" /> 100% Gluten-Free Tested
-            </span>
-            <span className="flex items-center gap-1.5 text-stone-300 font-semibold">
-              <CheckCircle2 className="w-4 h-4 text-emerald-500" /> ISO 22000 Food Safety System
             </span>
           </div>
 

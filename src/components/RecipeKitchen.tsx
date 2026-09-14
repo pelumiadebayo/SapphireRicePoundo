@@ -173,20 +173,6 @@ export const RecipeKitchen: React.FC = () => {
             </div>
           ))}
         </div>
-
-        {/* Cooking Tip Banner */}
-        <div className="mt-14 p-6 rounded-2xl bg-amber-50/70 border border-amber-200/80 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-          <div className="w-12 h-12 rounded-xl bg-amber-200/60 text-amber-900 flex items-center justify-center shrink-0">
-            <Sparkles className="w-6 h-6" />
-          </div>
-          <div className="flex-1">
-            <h5 className="text-sm font-bold text-amber-950">Master Secret: The Cold Slurry Technique for 100% Lump-Free Swallow</h5>
-            <p className="text-xs text-amber-800 mt-0.5">
-              Always whisk your first cup of Sapphire Rice Flour in cool water before introducing it to boiling water. This allows the micronized rice starches to disperse evenly, yielding a smooth, elastic swallow that pairs with any soup.
-            </p>
-          </div>
-        </div>
-
       </div>
 
       {/* Recipe Detail Modal */}
