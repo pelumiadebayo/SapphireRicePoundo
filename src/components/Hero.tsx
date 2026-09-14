@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Sparkles, CheckCircle2, Clock, ShieldCheck, ArrowRight, Flame, HeartHandshake, Eye, Upload, RefreshCw, Image as ImageIcon } from 'lucide-react';
+import { Sparkles, CheckCircle2, Clock, ShieldCheck, ArrowRight, Flame, HeartHandshake, Eye } from 'lucide-react';
 import { useProductImage } from '../context/ProductImageContext';
 import { BrandLogo } from './BrandLogo';
 
@@ -152,26 +152,6 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
                     <span className="text-[11px] font-semibold text-stone-600">
                       {isCustom ? 'Authentic Product Photo' : 'Sapphire Rice Flour (1kg)'}
                     </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    {isCustom && (
-                      <button
-                        onClick={resetToDefault}
-                        title="Reset to default placeholder"
-                        className="text-[10px] text-stone-400 hover:text-stone-700 flex items-center gap-1 transition-colors"
-                      >
-                        <RefreshCw className="w-3 h-3" />
-                        <span>Reset</span>
-                      </button>
-                    )}
-                    <button
-                      type="button"
-                      onClick={() => fileInputRef.current?.click()}
-                      className="text-[11px] font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 px-2.5 py-1 rounded-lg border border-emerald-200 flex items-center gap-1.5 transition-colors"
-                    >
-                      <Upload className="w-3.5 h-3.5 text-emerald-700" />
-                      <span>{isCustom ? 'Change Photo' : 'Upload Product Photo'}</span>
-                    </button>
                   </div>
                 </div>
 
