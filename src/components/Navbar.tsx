@@ -69,13 +69,22 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenDistributor, o
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo */}
-          <button
+          <div
             onClick={() => handleLinkClick('hero')}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                handleLinkClick('hero');
+              }
+            }}
             className="text-left group"
             id="brand-logo-btn"
+            role="button"
+            tabIndex={0}
+            aria-label="Go to home"
           >
             <BrandLogo size="md" withText theme="light" allowUpload />
-          </button>
+          </div>
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-7">
