@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenDistributor, o
               onClick={onOpenDistributor}
               className="text-amber-300 hover:text-amber-200 underline font-semibold transition-colors"
             >
-              Distributor Hotline: 0903660081
+              Distributor Hotline: 09036600814
             </button>
           </div>
         </div>

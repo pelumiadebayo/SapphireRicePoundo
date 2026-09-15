@@ -3,7 +3,17 @@ import { STORE_STOCKISTS } from '../data/mockData';
 import { Stockist } from '../types';
 import { MapPin, Search, Phone, ShoppingCart, ExternalLink, CheckCircle2, Building, Store } from 'lucide-react';
 
-export const StoreLocator: React.FC = () => {
+interface StoreLocatorProps {
+  isFullPage?: boolean;
+  onSeeAll?: () => void;
+  onBackHome?: () => void;
+}
+
+export const StoreLocator: React.FC<StoreLocatorProps> = ({
+  isFullPage = false,
+  onSeeAll,
+  onBackHome,
+}) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<string>('all');
   const [selectedState, setSelectedState] = useState<string>('all');
@@ -21,6 +31,7 @@ export const StoreLocator: React.FC = () => {
 
     return matchesSearch && matchesType && matchesState;
   });
+  const displayedStockists = isFullPage ? filteredStockists : filteredStockists.slice(0, 3);
 
   return (
     <section id="stockists" className="py-16 sm:py-20 bg-stone-50 border-t border-stone-200">
@@ -28,6 +39,14 @@ export const StoreLocator: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          {isFullPage && onBackHome && (
+            <button
+              onClick={onBackHome}
+              className="mb-4 text-xs font-bold text-emerald-800 hover:text-emerald-950 underline underline-offset-2"
+            >
+              &larr; Back to Home
+            </button>
+          )}
           <span className="text-xs font-bold text-emerald-800 tracking-widest uppercase mb-2 block flex items-center justify-center gap-1">
             <MapPin className="w-4 h-4 text-emerald-700" /> Nationwide Availability
           </span>
@@ -124,8 +143,8 @@ export const StoreLocator: React.FC = () => {
 
         {/* Stockists Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredStockists.length > 0 ? (
-            filteredStockists.map((stockist) => (
+          {displayedStockists.length > 0 ? (
+            displayedStockists.map((stockist) => (
               <div
                 key={stockist.id}
                 className="bg-white rounded-2xl p-6 border border-stone-200 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between"
@@ -200,6 +219,17 @@ export const StoreLocator: React.FC = () => {
             </div>
           )}
         </div>
+
+        {!isFullPage && filteredStockists.length > 0 && onSeeAll && (
+          <div className="mt-8 text-center">
+            <button
+              onClick={onSeeAll}
+              className="inline-flex items-center justify-center px-5 py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white text-sm font-bold rounded-xl shadow-sm transition-colors"
+            >
+              See All Stockists ({filteredStockists.length})
+            </button>
+          </div>
+        )}
 
       </div>
     </section>

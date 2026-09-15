@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
-                <a href="tel:0903660081" className="hover:text-emerald-300 transition-colors">0903660081</a>
+                <a href="tel:09036600814" className="hover:text-emerald-300 transition-colors">09036600814</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-emerald-500 shrink-0" />

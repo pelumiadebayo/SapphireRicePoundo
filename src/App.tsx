@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ProductImageProvider } from './context/ProductImageContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -14,19 +14,67 @@ import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 
 export default function App() {
+  const [isDistributorPage, setIsDistributorPage] = useState(
+    () => window.location.hash === '#distributors',
+  );
+  const [isStockistPage, setIsStockistPage] = useState(
+    () => window.location.hash === '#stockists',
+  );
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setIsDistributorPage(window.location.hash === '#distributors');
+      setIsStockistPage(window.location.hash === '#stockists');
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const handleOpenDistributor = () => {
+    window.location.hash = 'distributors';
+    setIsDistributorPage(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'distributors') {
+      handleOpenDistributor();
+      return;
+    }
+
+    if (isDistributorPage || isStockistPage) {
+      window.history.pushState({}, '', window.location.pathname + window.location.search);
+      setIsDistributorPage(false);
+      setIsStockistPage(false);
+      window.setTimeout(() => scrollToSection(sectionId), 0);
+      return;
+    }
+
     const el = document.getElementById(sectionId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const handleOpenDistributor = () => {
-    scrollToSection('distributors');
+  const handleOpenStockist = () => {
+    if (isDistributorPage || isStockistPage) {
+      window.history.pushState({}, '', window.location.pathname + window.location.search);
+      setIsDistributorPage(false);
+      setIsStockistPage(false);
+      window.setTimeout(() => scrollToSection('stockists'), 0);
+      return;
+    }
+
+    scrollToSection('stockists');
   };
 
-  const handleOpenStockist = () => {
-    scrollToSection('stockists');
+  const handleOpenStockistPage = () => {
+    window.location.hash = 'stockists';
+    setIsStockistPage(true);
+    setIsDistributorPage(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -41,47 +89,52 @@ export default function App() {
 
         {/* Main Content Sections */}
         <main className="flex-1">
-          {/* Hero Section */}
-          <Hero
-            onExploreProduct={() => scrollToSection('product')}
-            onExploreRecipes={() => scrollToSection('recipes')}
-            onFindRetailer={handleOpenStockist}
-          />
+          {isDistributorPage ? (
+            <DistributorPortal />
+          ) : isStockistPage ? (
+            <StoreLocator isFullPage onBackHome={handleOpenStockist} />
+          ) : (
+            <>
+              {/* Hero Section */}
+              <Hero
+                onExploreProduct={() => scrollToSection('product')}
+                onExploreRecipes={() => scrollToSection('recipes')}
+                onFindRetailer={handleOpenStockist}
+              />
 
-          {/* 4 Brand Pillars (Inspired by FMN Quality Standards) */}
-          <BrandValues
-            onLearnQuality={() => scrollToSection('quality')}
-          />
+              {/* 4 Brand Pillars (Inspired by FMN Quality Standards) */}
+              <BrandValues
+                onLearnQuality={() => scrollToSection('quality')}
+              />
 
-          {/* Product Showcase (1kg Packshot, Specs, Nutrition, 10-Min Sapphire Rice Swallow Guide) */}
-          <ProductShowcase
-            onGoToRecipes={() => scrollToSection('recipes')}
-            onOpenDistributor={handleOpenDistributor}
-            onFindRetailer={handleOpenStockist}
-          />
+              {/* Product Showcase (1kg Packshot, Specs, Nutrition, 10-Min Sapphire Rice Swallow Guide) */}
+              <ProductShowcase
+                onGoToRecipes={() => scrollToSection('recipes')}
+                onOpenDistributor={handleOpenDistributor}
+                onFindRetailer={handleOpenStockist}
+              />
 
-          {/* The Sapphire Recipe Kitchen (Interactive Hub with Portions & Ingredients) */}
-          <RecipeKitchen />
+              {/* The Sapphire Recipe Kitchen (Interactive Hub with Portions & Ingredients) */}
+              <RecipeKitchen />
 
-          {/* Nutritional Superiority & Side-by-Side Comparison */}
-          <HealthAndNutrition />
+              {/* Nutritional Superiority & Side-by-Side Comparison */}
+              <HealthAndNutrition />
 
-          {/* Farm to Table & Community Story */}
-          <FarmToTable />
+              {/* Farm to Table & Community Story */}
+              <FarmToTable />
 
-          {/* Where to Buy / Store Locator & E-commerce Hub */}
-          <StoreLocator />
+              {/* Where to Buy / Store Locator & E-commerce Hub */}
+              <StoreLocator onSeeAll={handleOpenStockistPage} />
 
-          {/* B2B Wholesale & Distributor Portal with Live Tier Estimator */}
-          <DistributorPortal />
+              {/* Customer Testimonials & Home Cook Reviews */}
+              <CustomerStories />
 
-          {/* Customer Testimonials & Home Cook Reviews */}
-          <CustomerStories />
-
-          {/* Frequently Asked Questions */}
-          <FAQSection
-            onOpenDistributor={handleOpenDistributor}
-          />
+              {/* Frequently Asked Questions */}
+              <FAQSection
+                onOpenDistributor={handleOpenDistributor}
+              />
+            </>
+          )}
         </main>
 
         {/* Corporate FMCG Footer */}

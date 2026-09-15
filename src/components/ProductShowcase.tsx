@@ -165,7 +165,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                   }`}
                 >
                   {/* Photo bar */}
-                  <div className="w-full flex items-center justify-between mb-3">
+                  {/* <div className="w-full flex items-center justify-between mb-3">
                     <span className="text-[11px] font-semibold text-stone-700 flex items-center gap-2">
                       <BrandLogo size="sm" />
                       <span>{isCustom ? 'Authentic Product Pack' : 'Sapphire 1kg Flagship Pouch'}</span>
@@ -189,7 +189,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
                         <span>{isCustom ? 'Change Photo' : 'Upload Product Photo'}</span>
                       </button>
                     </div>
-                  </div>
+                  </div> */}
 
                   <input
                     ref={fileInputRef}
