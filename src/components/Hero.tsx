@@ -68,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProduct, onExploreRecipes, 
 
             {/* Value Description */}
             <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Meet <strong className="text-stone-900 font-semibold">Sapphire Rice Flour Mix (1kg)</strong> — crafted from select sun-ripened river basin paddies and cool-milled to an ultra-fine micronized texture. Specially formulated to make its own signature Sapphire Rice Swallow: velvety, lump-free, and delightfully light to pair with Egusi, Efo Riro, Ogbono, Afang, and all your favorite soups.
+              Meet <strong className="text-stone-900 font-semibold">Sapphire Rice Flour (1kg)</strong> — crafted from select sun-ripened river basin paddies and cool-milled to an ultra-fine micronized texture. Specially formulated to make its own signature Sapphire Rice Swallow: velvety, lump-free, and delightfully light to pair with Egusi, Efo Riro, Ogbono, Afang, and all your favorite soups.
             </p>
 
             {/* Quick Benefits Checklist */}

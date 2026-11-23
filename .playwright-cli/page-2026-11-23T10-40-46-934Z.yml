@@ -25,7 +25,7 @@
   - main [ref=e17]:
     - generic [ref=e19]:
       - generic [ref=e20]:
-        - paragraph [ref=e21]: SAPPHIRE RICE FLOUR MIX
+        - paragraph [ref=e21]: Sapphire Rice Flour
         - heading "Smooth rice swallow for every soup." [level=1] [ref=e22]
         - paragraph [ref=e23]: Finely milled rice flour for preparing swallow. Serve it with egusi, efo riro, ogbono and the soups you love.
         - generic [ref=e24]:
@@ -40,17 +40,17 @@
           - text: .
       - generic [ref=e33]:
         - img "Rice swallow served with Nigerian soup" [ref=e34]
-        - img "Sapphire Rice Flour Mix 1 kg pack artwork" [ref=e36]
+        - img "Sapphire Rice Flour 1 kg pack artwork" [ref=e36]
     - generic [ref=e38]:
       - generic [ref=e39]:
         - paragraph [ref=e40]: THE PRODUCT
         - heading "Find the right pack for you" [level=2] [ref=e41]
         - paragraph [ref=e42]: The current site shows a 1 kg pack. Ask our sales team for the current price and delivery options.
       - generic [ref=e43]:
-        - img "Sapphire Rice Flour Mix 1 kg packaging artwork" [ref=e45]
+        - img "Sapphire Rice Flour 1 kg packaging artwork" [ref=e45]
         - generic [ref=e46]:
           - text: RICE FLOUR FOR SWALLOW
-          - heading "Sapphire Rice Flour Mix" [level=3] [ref=e47]
+          - heading "Sapphire Rice Flour" [level=3] [ref=e47]
           - paragraph [ref=e48]: 1 kg pack
           - paragraph [ref=e49]: For preparing rice swallow to enjoy with your favourite Nigerian soups.
           - generic [ref=e50]:
@@ -67,7 +67,7 @@
         - generic [ref=e63]:
           - paragraph [ref=e64]: IN THE KITCHEN
           - heading "Delicious swallow, made simple" [level=2] [ref=e65]
-          - paragraph [ref=e66]: A straightforward way to get started with Sapphire Rice Flour Mix.
+          - paragraph [ref=e66]: A straightforward way to get started with Sapphire Rice Flour.
       - list [ref=e68]:
         - listitem [ref=e69]:
           - generic [ref=e70]: "01"
@@ -114,7 +114,7 @@
       - generic [ref=e113]:
         - generic [ref=e114]:
           - generic [ref=e115]: Product
-          - strong [ref=e116]: Sapphire Rice Flour Mix
+          - strong [ref=e116]: Sapphire Rice Flour
         - generic [ref=e117]:
           - generic [ref=e118]: Pack shown, shelf life
           - strong [ref=e119]: 1 kg
@@ -140,7 +140,7 @@
       - generic [ref=e148]:
         - paragraph [ref=e149]: FOR TRADE
         - heading "Partner with Sapphire Foods" [level=2] [ref=e150]
-        - paragraph [ref=e151]: Interested in stocking Sapphire Rice Flour Mix in your supermarket, retail store, restaurant or distribution business? Let’s grow together.
+        - paragraph [ref=e151]: Interested in stocking Sapphire Rice Flour in your supermarket, retail store, restaurant or distribution business? Let’s grow together.
       - link "Become a Stockist" [ref=e152] [cursor=pointer]:
         - /url: "#wholesale"
     - generic [ref=e156]:
@@ -149,7 +149,7 @@
         - heading "Frequently asked questions" [level=2] [ref=e159]
       - generic [ref=e160]:
         - group [ref=e161]:
-          - generic "What is Sapphire Rice Flour Mix used for?" [ref=e162] [cursor=pointer]
+          - generic "What is Sapphire Rice Flour used for?" [ref=e162] [cursor=pointer]
         - group [ref=e163]:
           - generic "Which pack size can I enquire about?" [ref=e164] [cursor=pointer]
         - group [ref=e165]:

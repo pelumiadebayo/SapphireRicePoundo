@@ -3,7 +3,7 @@ import { ProductPack, NutritionalFact, Recipe, Stockist, Testimonial } from '../
 export const PRODUCT_PACKS: ProductPack[] = [
   {
     id: 'pack-1kg',
-    name: 'Sapphire Rice Flour Mix (1kg)',
+    name: 'Sapphire Rice Flour (1kg)',
     weight: '1kg (2.2 lbs)',
     tagline: 'The Signature Household Pouch',
     description: 'Our flagship 1kg hermetically sealed pouch. Specially milled to an ultra-fine micronized texture for velvety smooth, lump-free Sapphire Rice Swallow. Pairs effortlessly with Egusi, Efo Riro, Ogbono, Afang, and every rich traditional soup.',
@@ -15,7 +15,7 @@ export const PRODUCT_PACKS: ProductPack[] = [
   },
   {
     id: 'pack-2kg',
-    name: 'Sapphire Rice Flour Mix (2kg)',
+    name: 'Sapphire Rice Flour (2kg)',
     weight: '2kg (4.4 lbs)',
     tagline: 'Family Economy Value Pack',
     description: 'Double the goodness with convenience-grip reclosable seal. Perfect for busy households who enjoy hearty weekly swallow meals that digest cleanly without sluggish heaviness.',
@@ -85,7 +85,7 @@ export const RECIPES: Recipe[] = [
     soupName: 'Efo Riro (Rich Vegetable Soup)',
     description: 'The ultimate culinary harmony. Turn Sapphire Rice Flour into a pristine, velvety white swallow in just 10 minutes, then scoop through sizzling hot Efo Riro loaded with smoked fish, ponmo, and locust beans (iru). The clean, smooth swallow balances the bold, savory vegetable sauce without leaving you feeling heavy.',
     ingredients: [
-      { name: 'Sapphire Rice Flour Mix', amount: '2', unit: 'cups', isKeySapphire: true },
+      { name: 'Sapphire Rice Flour', amount: '2', unit: 'cups', isKeySapphire: true },
       { name: 'Cold water (for smooth slurry)', amount: '1', unit: 'cup' },
       { name: 'Boiling water', amount: '2.5', unit: 'cups' },
       { name: 'Chopped fresh spinach or shoko leaves', amount: '4', unit: 'cups' },
@@ -145,7 +145,7 @@ export const RECIPES: Recipe[] = [
     soupName: 'Egusi Soup (Melon Seed & Ugu)',
     description: 'Nothing compares to dipping a morsel of ultra-smooth, firm Sapphire Rice Swallow into rich, golden-red Egusi soup loaded with tender melon clumps, stockfish, and fresh ugu greens. The swallow glides effortlessly down the throat without post-meal bloating.',
     ingredients: [
-      { name: 'Sapphire Rice Flour Mix', amount: '2', unit: 'cups', isKeySapphire: true },
+      { name: 'Sapphire Rice Flour', amount: '2', unit: 'cups', isKeySapphire: true },
       { name: 'Cold water (for cold slurry)', amount: '1', unit: 'cup' },
       { name: 'Boiling water', amount: '2.5', unit: 'cups' },
       { name: 'Ground melon seeds (Egusi)', amount: '2', unit: 'cups' },
@@ -202,7 +202,7 @@ export const RECIPES: Recipe[] = [
     soupName: 'Ogbono Draw Soup',
     description: 'The silky, elastic draw of slow-simmered Ogbono soup clings to the soft, cohesive texture of Sapphire Rice Swallow. Enhanced with aromatic uziza leaves, smoked catfish, and rich crayfish, this combination delivers pure comfort.',
     ingredients: [
-      { name: 'Sapphire Rice Flour Mix', amount: '2', unit: 'cups', isKeySapphire: true },
+      { name: 'Sapphire Rice Flour', amount: '2', unit: 'cups', isKeySapphire: true },
       { name: 'Cold water for slurry', amount: '1', unit: 'cup' },
       { name: 'Boiling water', amount: '2.5', unit: 'cups' },
       { name: 'Finely milled Ogbono seeds', amount: '1', unit: 'cup' },
@@ -247,7 +247,7 @@ export const RECIPES: Recipe[] = [
     soupName: 'Calabar Afang Soup',
     description: 'Afang soup is celebrated across Nigeria for its rich, earthy texture and deep coastal flavors. Paired with soft, pliable Sapphire Rice Swallow, each bite delivers the pleasant crunch of afang leaves and the savory kick of periwinkles.',
     ingredients: [
-      { name: 'Sapphire Rice Flour Mix', amount: '2', unit: 'cups', isKeySapphire: true },
+      { name: 'Sapphire Rice Flour', amount: '2', unit: 'cups', isKeySapphire: true },
       { name: 'Water (for slurry & boiling)', amount: '3.5', unit: 'cups' },
       { name: 'Pounded fresh afang (okazi) leaves', amount: '3', unit: 'cups' },
       { name: 'Shredded waterleaf', amount: '4', unit: 'cups' },
@@ -259,7 +259,7 @@ export const RECIPES: Recipe[] = [
       {
         step: 1,
         title: 'Prepare Firm Sapphire Rice Swallow',
-        text: 'Turn Sapphire Rice Flour Mix in boiling water using the cold slurry method until firm, smooth, and stretchy. Steam for 3 minutes, then wrap in cling film.',
+        text: 'Turn Sapphire Rice Flour in boiling water using the cold slurry method until firm, smooth, and stretchy. Steam for 3 minutes, then wrap in cling film.',
       },
       {
         step: 2,
@@ -286,7 +286,7 @@ export const RECIPES: Recipe[] = [
     soupName: 'Delta Banga Soup (Ofe Akwu)',
     description: 'The intoxicating aroma of Banga spice blend, rohohie, and beletete simmered in rich palm nut extract meets the velvety texture of Sapphire Rice Swallow. A culinary feast steeped in Niger Delta heritage.',
     ingredients: [
-      { name: 'Sapphire Rice Flour Mix', amount: '2', unit: 'cups', isKeySapphire: true },
+      { name: 'Sapphire Rice Flour', amount: '2', unit: 'cups', isKeySapphire: true },
       { name: 'Water (for slurry & boiling)', amount: '3.5', unit: 'cups' },
       { name: 'Concentrated palm fruit extract (Banga)', amount: '3', unit: 'cups' },
       { name: 'Fresh catfish cuts or dried bushmeat', amount: '500', unit: 'grams' },
@@ -297,7 +297,7 @@ export const RECIPES: Recipe[] = [
       {
         step: 1,
         title: 'Cook Sapphire Rice Swallow',
-        text: 'Stir Sapphire Rice Flour Mix into boiling water until pliable, firm, and lump-free. Steam covered for 3 minutes and form into soft mounds.',
+        text: 'Stir Sapphire Rice Flour into boiling water until pliable, firm, and lump-free. Steam covered for 3 minutes and form into soft mounds.',
       },
       {
         step: 2,
@@ -324,7 +324,7 @@ export const RECIPES: Recipe[] = [
     soupName: 'Abula (Ewedu, Gbegiri & Buka Stew)',
     description: 'The iconic Yoruba Buka feast: bright green whisked ewedu, golden yellow creamy gbegiri (bean soup), and fiery red buka stew layered together. Paired with soft, silky Sapphire Rice Swallow, this is swallow culture at its finest.',
     ingredients: [
-      { name: 'Sapphire Rice Flour Mix', amount: '2', unit: 'cups', isKeySapphire: true },
+      { name: 'Sapphire Rice Flour', amount: '2', unit: 'cups', isKeySapphire: true },
       { name: 'Water for swallow preparation', amount: '3.5', unit: 'cups' },
       { name: 'Fresh ewedu leaves (whisked with kaun or blended)', amount: '2', unit: 'cups' },
       { name: 'Creamy peeled brown beans puree (Gbegiri)', amount: '2', unit: 'cups' },
@@ -335,7 +335,7 @@ export const RECIPES: Recipe[] = [
       {
         step: 1,
         title: 'Turn Silky Sapphire Rice Swallow',
-        text: 'Make smooth swallow with Sapphire Rice Flour Mix in 10 minutes. Wrap in leaves or wrap film for 3 minutes to rest.',
+        text: 'Make smooth swallow with Sapphire Rice Flour in 10 minutes. Wrap in leaves or wrap film for 3 minutes to rest.',
       },
       {
         step: 2,
@@ -534,12 +534,12 @@ export const QUALITY_PILLARS = [
 
 export const FAQS = [
   {
-    question: 'What is Sapphire Rice Flour Mix used for?',
-    answer: 'Sapphire Rice Flour Mix is specially formulated to make its own signature Sapphire Rice Swallow — an ultra-smooth, firm, and elastic swallow created to be eaten with all your favorite soups, including Egusi, Efo Riro, Ogbono, Afang, Banga, Ewedu/Gbegiri, and Okro. It is NOT for baking or snacks; it is a dedicated, premium staple swallow.',
+    question: 'What is Sapphire Rice Flour used for?',
+    answer: 'Sapphire Rice Flour is specially formulated to make its own signature Sapphire Rice Swallow — an ultra-smooth, firm, and elastic swallow created to be eaten with all your favorite soups, including Egusi, Efo Riro, Ogbono, Afang, Banga, Ewedu/Gbegiri, and Okro. It is NOT for baking or snacks; it is a dedicated, premium staple swallow.',
   },
   {
     question: 'How is Sapphire Rice Swallow different from Tuwo Shinkafa?',
-    answer: 'While traditional Tuwo Shinkafa is made by boiling and pounding whole, mushy rice grains into a soft mash, Sapphire Rice Flour Mix is micronized into an ultra-fine grain flour. When stirred into boiling water, it turns into an elastic, uniform, firm swallow — much like Semovita or pounded yam — that holds its shape and glides effortlessly with soup.',
+    answer: 'While traditional Tuwo Shinkafa is made by boiling and pounding whole, mushy rice grains into a soft mash, Sapphire Rice Flour is micronized into an ultra-fine grain flour. When stirred into boiling water, it turns into an elastic, uniform, firm swallow — much like Semovita or pounded yam — that holds its shape and glides effortlessly with soup.',
   },
   {
     question: 'Can I eat Sapphire Rice Swallow with any Nigerian or African soup?',

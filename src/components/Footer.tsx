@@ -77,7 +77,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
             <BrandLogo size="lg" withText theme="dark" allowUpload />
 
             <p className="text-stone-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-              Sapphire Rice Flour Mix is West Africa's benchmark in pure grain milling. Milled from sun-ripened river basin paddies, our mission is to make nutritious, authentic, lump-free swallow accessible to every household to enjoy with diverse traditional soups.
+              Sapphire Rice Flour is West Africa's benchmark in pure grain milling. Milled from sun-ripened river basin paddies, our mission is to make nutritious, authentic, lump-free swallow accessible to every household to enjoy with diverse traditional soups.
             </p>
 
             <div className="pt-2 space-y-2 text-xs text-stone-400">
@@ -112,7 +112,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDistributor })
             <ul className="space-y-2.5 text-xs text-stone-400">
               <li>
                 <button onClick={() => onNavigate('product')} className="hover:text-emerald-400 transition-colors">
-                  Sapphire Rice Flour Mix (1kg Pouch)
+                  Sapphire Rice Flour (1kg Pouch)
                 </button>
               </li>
               <li>

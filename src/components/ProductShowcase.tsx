@@ -98,7 +98,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
             <Sparkles className="w-3.5 h-3.5 text-emerald-700" /> The Sapphire Range
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 font-serif">
-            Sapphire Rice Flour Mix (1kg)
+            Sapphire Rice Flour (1kg)
           </h2>
           <p className="mt-3 text-stone-600 text-base leading-relaxed">
             Engineered for Nigerian and African households, banquets, and commercial caterers who refuse to compromise on supple swallow texture, digestive lightness, and authentic soup pairings.
