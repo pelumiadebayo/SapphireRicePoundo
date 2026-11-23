@@ -1,0 +1,187 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Sapphire Foods home" [ref=e6] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e7]:
+          - text: Sapphire
+          - generic [ref=e8]: FOODS
+      - link "Order Now" [ref=e14] [cursor=pointer]:
+        - /url: mailto:sales@sapphirefoods.ng?subject=Sapphire%20Rice%20Flour%20Mix%20order%20enquiry
+      - button "Close menu" [expanded] [active] [ref=e190]
+    - navigation "Mobile navigation" [ref=e194]:
+      - link "Product" [ref=e195] [cursor=pointer]:
+        - /url: "#product"
+      - link "Recipes" [ref=e196] [cursor=pointer]:
+        - /url: "#recipes"
+      - link "Where to Buy" [ref=e197] [cursor=pointer]:
+        - /url: "#stockists"
+      - link "Wholesale" [ref=e198] [cursor=pointer]:
+        - /url: "#wholesale"
+      - link "Order Now" [ref=e199] [cursor=pointer]:
+        - /url: mailto:sales@sapphirefoods.ng?subject=Sapphire%20Rice%20Flour%20Mix%20order%20enquiry
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: SAPPHIRE RICE FLOUR MIX
+        - heading "Smooth rice swallow for every soup." [level=1] [ref=e22]
+        - paragraph [ref=e23]: Finely milled rice flour for preparing swallow. Serve it with egusi, efo riro, ogbono and the soups you love.
+        - generic [ref=e24]:
+          - link "Order Now" [ref=e25] [cursor=pointer]:
+            - /url: mailto:sales@sapphirefoods.ng?subject=Sapphire%20Rice%20Flour%20Mix%20order%20enquiry
+          - link "Find a Stockist" [ref=e28] [cursor=pointer]:
+            - /url: "#stockists"
+        - paragraph [ref=e31]:
+          - text: Questions about price or delivery? Call
+          - link "0903 660 0814" [ref=e32] [cursor=pointer]:
+            - /url: tel:+2349036600814
+          - text: .
+      - generic [ref=e33]:
+        - img "Rice swallow served with Nigerian soup" [ref=e34]
+        - img "Sapphire Rice Flour Mix 1 kg pack artwork" [ref=e36]
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: THE PRODUCT
+        - heading "Find the right pack for you" [level=2] [ref=e41]
+        - paragraph [ref=e42]: The current site shows a 1 kg pack. Ask our sales team for the current price and delivery options.
+      - generic [ref=e43]:
+        - img "Sapphire Rice Flour Mix 1 kg packaging artwork" [ref=e45]
+        - generic [ref=e46]:
+          - text: RICE FLOUR FOR SWALLOW
+          - heading "Sapphire Rice Flour Mix" [level=3] [ref=e47]
+          - paragraph [ref=e48]: 1 kg pack
+          - paragraph [ref=e49]: For preparing rice swallow to enjoy with your favourite Nigerian soups.
+          - generic [ref=e50]:
+            - generic [ref=e51]: Price
+            - strong [ref=e52]: Request current price
+          - generic [ref=e53]:
+            - generic [ref=e54]: Availability
+            - strong [ref=e55]: Confirm with Sapphire Foods
+          - link "Enquire and order" [ref=e56] [cursor=pointer]:
+            - /url: mailto:sales@sapphirefoods.ng?subject=Sapphire%20Rice%20Flour%20Mix%20order%20enquiry
+          - paragraph [ref=e59]: Existing pack artwork shown. An approved photograph of the final pack is needed before publication.
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - paragraph [ref=e64]: IN THE KITCHEN
+          - heading "Delicious swallow, made simple" [level=2] [ref=e65]
+          - paragraph [ref=e66]: A straightforward way to get started with Sapphire Rice Flour Mix.
+        - paragraph [ref=e67]: The available label artwork says to add flour gradually to boiling water and stir until it thickens. Confirm the final ratio and cooking time against approved instructions before publication.
+      - list [ref=e68]:
+        - listitem [ref=e69]:
+          - generic [ref=e70]: "01"
+          - generic [ref=e71]:
+            - heading "Bring water to a boil" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Start with clean water in a sturdy pot.
+        - listitem [ref=e74]:
+          - generic [ref=e75]: "02"
+          - generic [ref=e76]:
+            - heading "Add flour gradually" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Stir continuously as you add the flour and it begins to thicken.
+        - listitem [ref=e79]:
+          - generic [ref=e80]: "03"
+          - generic [ref=e81]:
+            - heading "Turn and serve" [level=3] [ref=e82]
+            - paragraph [ref=e83]: Continue turning until the swallow reaches your preferred consistency. Serve warm with soup.
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - paragraph [ref=e87]: MEAL INSPIRATION
+        - heading "Made for the soups you love" [level=2] [ref=e88]
+        - paragraph [ref=e89]: Three familiar ways to bring rice swallow to your table.
+      - generic [ref=e90]:
+        - article [ref=e91]:
+          - img "Rice swallow served with Egusi soup" [ref=e92]
+          - generic [ref=e93]:
+            - heading "Egusi" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Rich melon seed soup for a comforting meal.
+        - article [ref=e96]:
+          - img "Rice swallow served with Efo riro soup" [ref=e97]
+          - generic [ref=e98]:
+            - heading "Efo riro" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Peppery greens bring colour and depth to the table.
+        - article [ref=e101]:
+          - img "Rice swallow served with Ogbono soup" [ref=e102]
+          - generic [ref=e103]:
+            - heading "Ogbono" [level=3] [ref=e104]
+            - paragraph [ref=e105]: A classic draw soup with a savoury finish.
+      - paragraph [ref=e106]: Existing meal images are illustrative; approved food photography is needed for the final site.
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - paragraph [ref=e110]: PRODUCT FACTS
+        - heading "The details that matter" [level=2] [ref=e111]
+        - paragraph [ref=e112]: We are checking the final approved product label before publishing detailed nutrition or certification information.
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]: Product
+          - strong [ref=e116]: Sapphire Rice Flour Mix
+        - generic [ref=e117]:
+          - generic [ref=e118]: Pack shown
+          - strong [ref=e119]: 1 kg
+        - generic [ref=e120]:
+          - generic [ref=e121]: Used for
+          - strong [ref=e122]: Preparing rice swallow
+        - generic [ref=e123]:
+          - generic [ref=e124]: Ingredients, storage, shelf life and allergens
+          - strong [ref=e125]: Awaiting approved label confirmation
+        - generic [ref=e126]:
+          - generic [ref=e127]: Nutrition and NAFDAC information
+          - strong [ref=e128]: Awaiting supporting records
+    - generic [ref=e131]:
+      - paragraph [ref=e132]: WHERE TO BUY
+      - heading "Find Sapphire near you" [level=2] [ref=e133]
+      - paragraph [ref=e134]: We are confirming exact retailer branches and current stock before listing them here. For availability in Lagos or delivery to your area, contact our sales team directly.
+      - generic [ref=e135]:
+        - link "Call about availability" [ref=e136] [cursor=pointer]:
+          - /url: tel:+2349036600814
+        - link "Email sales" [ref=e139] [cursor=pointer]:
+          - /url: mailto:sales@sapphirefoods.ng
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: FOR TRADE
+        - heading "Partner with Sapphire Foods" [level=2] [ref=e150]
+        - paragraph [ref=e151]: Interested in stocking Sapphire Rice Flour Mix in your supermarket, retail store, restaurant or distribution business? Let’s grow together.
+      - link "Become a Stockist" [ref=e152] [cursor=pointer]:
+        - /url: "#wholesale"
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - paragraph [ref=e158]: GOOD TO KNOW
+        - heading "Frequently asked questions" [level=2] [ref=e159]
+      - generic [ref=e160]:
+        - group [ref=e161]:
+          - generic "What is Sapphire Rice Flour Mix used for?" [ref=e162] [cursor=pointer]
+        - group [ref=e163]:
+          - generic "Which pack size can I enquire about?" [ref=e164] [cursor=pointer]
+        - group [ref=e165]:
+          - generic "How long does it take to prepare?" [ref=e166] [cursor=pointer]
+        - group [ref=e167]:
+          - generic "Where can I buy it?" [ref=e168] [cursor=pointer]
+  - contentinfo [ref=e169]:
+    - generic [ref=e170]:
+      - generic [ref=e171]:
+        - link "Sapphire FOODS" [ref=e172] [cursor=pointer]:
+          - /url: "#home"
+          - generic [ref=e173]:
+            - text: Sapphire
+            - generic [ref=e174]: FOODS
+        - paragraph [ref=e175]: Rice flour for the soups you love.
+      - generic [ref=e176]:
+        - heading "Explore" [level=2] [ref=e177]
+        - link "Product" [ref=e178] [cursor=pointer]:
+          - /url: "#home-product"
+        - link "Recipes" [ref=e179] [cursor=pointer]:
+          - /url: "#home-recipes"
+        - link "Where to Buy" [ref=e180] [cursor=pointer]:
+          - /url: "#home-stockists"
+        - link "Wholesale" [ref=e181] [cursor=pointer]:
+          - /url: "#wholesale"
+      - generic [ref=e182]:
+        - heading "Contact" [level=2] [ref=e183]
+        - link "0903 660 0814" [ref=e184] [cursor=pointer]:
+          - /url: tel:+2349036600814
+        - link "sales@sapphirefoods.ng" [ref=e185] [cursor=pointer]:
+          - /url: mailto:sales@sapphirefoods.ng
+        - link "info@sapphirefoods.ng" [ref=e186] [cursor=pointer]:
+          - /url: mailto:info@sapphirefoods.ng
+    - generic [ref=e187]: © 2026 Sapphire Foods

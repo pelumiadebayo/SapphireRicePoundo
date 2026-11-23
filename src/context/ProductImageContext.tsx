@@ -13,7 +13,7 @@ interface ProductImageContextType {
 
 const assetUrl = (fileName: string) => `${import.meta.env.BASE_URL}assets/images/${fileName}`;
 const publicFileUrl = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
-const DEFAULT_IMAGE = assetUrl('sapphire_rice_flour_pack_1789386666178.png');
+const DEFAULT_IMAGE = assetUrl('onericeflour.jpeg');
 const DEFAULT_LOGO = assetUrl('sapphire_logo.png');
 const STORAGE_KEY = 'sapphire_custom_product_image';
 const LOGO_STORAGE_KEY = 'sapphire_custom_brand_logo';
