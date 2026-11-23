@@ -34,7 +34,7 @@
           - link "Find a Stockist" [ref=e28] [cursor=pointer]:
             - /url: "#stockists"
         - paragraph [ref=e31]:
-          - text: Questions about price or delivery? Call
+          - text: Questions about order or delivery? Call/Whatsapp
           - link "0903 660 0814" [ref=e32] [cursor=pointer]:
             - /url: tel:+2349036600814
           - text: .
@@ -55,7 +55,7 @@
           - paragraph [ref=e49]: For preparing rice swallow to enjoy with your favourite Nigerian soups.
           - generic [ref=e50]:
             - generic [ref=e51]: Price
-            - strong [ref=e52]: Request current price
+            - strong [ref=e52]: Request current wholesales price
           - generic [ref=e53]:
             - generic [ref=e54]: Availability
             - strong [ref=e55]: Confirm with Sapphire Foods
@@ -68,7 +68,6 @@
           - paragraph [ref=e64]: IN THE KITCHEN
           - heading "Delicious swallow, made simple" [level=2] [ref=e65]
           - paragraph [ref=e66]: A straightforward way to get started with Sapphire Rice Flour Mix.
-        - paragraph [ref=e67]: The available label artwork says to add flour gradually to boiling water and stir until it thickens. Confirm the final ratio and cooking time against approved instructions before publication.
       - list [ref=e68]:
         - listitem [ref=e69]:
           - generic [ref=e70]: "01"
@@ -106,32 +105,32 @@
           - generic [ref=e103]:
             - heading "Ogbono" [level=3] [ref=e104]
             - paragraph [ref=e105]: A classic draw soup with a savoury finish.
-      - paragraph [ref=e106]: Existing meal images are illustrative; approved food photography is needed for the final site.
+      - paragraph [ref=e106]: 
     - generic [ref=e108]:
       - generic [ref=e109]:
         - paragraph [ref=e110]: PRODUCT FACTS
         - heading "The details that matter" [level=2] [ref=e111]
-        - paragraph [ref=e112]: We are checking the final approved product label before publishing detailed nutrition or certification information.
+        - paragraph [ref=e112]: 
       - generic [ref=e113]:
         - generic [ref=e114]:
           - generic [ref=e115]: Product
           - strong [ref=e116]: Sapphire Rice Flour Mix
         - generic [ref=e117]:
-          - generic [ref=e118]: Pack shown
+          - generic [ref=e118]: Pack shown, shelf life
           - strong [ref=e119]: 1 kg
         - generic [ref=e120]:
           - generic [ref=e121]: Used for
           - strong [ref=e122]: Preparing rice swallow
         - generic [ref=e123]:
-          - generic [ref=e124]: Ingredients, storage, shelf life and allergens
-          - strong [ref=e125]: Awaiting approved label confirmation
+          - generic [ref=e124]: Ingredients
+          - strong [ref=e125]: Rice Granule & Cassava starch
         - generic [ref=e126]:
           - generic [ref=e127]: Nutrition and NAFDAC information
           - strong [ref=e128]: Awaiting supporting records
     - generic [ref=e131]:
       - paragraph [ref=e132]: WHERE TO BUY
       - heading "Find Sapphire near you" [level=2] [ref=e133]
-      - paragraph [ref=e134]: We are confirming exact retailer branches and current stock before listing them here. For availability in Lagos or delivery to your area, contact our sales team directly.
+      - paragraph [ref=e134]: We are constantly working on bringing sapphire Rice Flour to your nearest store. For availability in Lagos or delivery to your area, contact our sales team directly.
       - generic [ref=e135]:
         - link "Call about availability" [ref=e136] [cursor=pointer]:
           - /url: tel:+2349036600814

@@ -13,8 +13,11 @@ export default function InvenieWidget() {
     return () => { host.replaceChildren(); };
   }, []);
   return (
-    <main className="buy-page">
-      <div className="buy-page-content" ref={container} />
-    </main>
+    <section className="buy-page">
+      <div className="container">
+        <a href={`${import.meta.env.BASE_URL}#home`} className="back-link">← Back to home</a>
+        <div className="buy-page-content" ref={container} />
+      </div>
+    </section>
   );
 }
