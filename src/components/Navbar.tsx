@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onOpenDistributor, o
             <span className="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full text-[11px] font-semibold border border-emerald-500/30 flex items-center gap-1">
               <Sparkles className="w-3 h-3 text-amber-400" /> 100% Naturally Gluten-Free
             </span>
-            <span className="hidden sm:inline">Sapphire Rice Flour (1kg) — Silky Lump-Free Swallow for Nigeria's Iconic Soups</span>
+            <span className="hidden sm:inline">Sapphire Rice Flour (1kg) — Silky Lump-Free Swallow for Nigeria's Soups</span>
           </div>
           <div className="flex items-center gap-4 text-emerald-200 text-[11px]">
             <span className="flex items-center gap-1">

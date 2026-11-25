@@ -35,7 +35,7 @@ export const RecipeKitchen: React.FC = () => {
               Sapphire Rice Swallow & Soup Pairings
             </h2>
             <p className="mt-2 text-stone-600 text-sm sm:text-base max-w-2xl">
-              Just like celebrated Semo swallow paired with Nigeria’s most iconic soups, Sapphire Rice Flour creates its own velvety, lump-free swallow made to be eaten with sizzling Efo Riro, rich Egusi, Ogbono, Afang, and Banga.
+              Just like celebrated Semo swallow paired with Nigeria’s soups, Sapphire Rice Flour creates its own velvety, lump-free swallow made to be eaten with sizzling Efo Riro, rich Egusi, Ogbono, Afang, and Banga.
             </p>
           </div>
 
